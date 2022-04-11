@@ -23,11 +23,11 @@ public class CORE : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        for (int i = 0; i < 10; i++)
+        for (int i = 0; i <= 20; i++)
         {
-            print(Random.Range(1, 10));
+            Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
         }
-        Instantiate(enemyPrefab, spawnPoint.position, Quaternion.identity);
+        
     }
 
     // Update is called once per frame
