@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Player
+public class Player : Character
 {
     private string name;
     private int killCount;
@@ -15,15 +15,7 @@ public class Player
         this.currentRoom = null;
     }
 
-    public void setRoom(Room r)
-    {
-        this.currentRoom = r;
-    }
-
-    public Room getRoom()
-    {
-        return this.currentRoom;
-    }
+    
 
     public void addKill()
     {

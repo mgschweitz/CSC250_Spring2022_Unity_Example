@@ -2,18 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Enemy
+public class Enemy : Character
 {
-    private Room currentRoom;
+    //private Room currentRoom;    
 
-    public void setRoom(Room r)
-    {
-        this.currentRoom = r;
-    }
-
-    public Room getRoom()
-    {
-        return this.currentRoom;
-    }
-
+    Enemy()
+	{
+	    this.currentRoom = null;
+	}
 }
